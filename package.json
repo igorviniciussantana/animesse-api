@@ -10,12 +10,17 @@
   "author": "Igor Vinicius",
   "license": "MIT",
   "dependencies": {
+    "adminjs": "^6.5.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
+    "dotenv-safe": "^8.2.0",
     "express": "^4.18.2",
+    "path": "^0.12.7",
+    "pg": "^8.8.0",
     "sequelize": "^6.25.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "sequelize-cli": "^6.5.2"
   }
 }
