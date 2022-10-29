@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Igor Vinicius",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
     "sequelize": "^6.25.3"
