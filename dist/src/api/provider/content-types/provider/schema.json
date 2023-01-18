@@ -1,0 +1,30 @@
+{
+    "kind": "collectionType",
+    "collectionName": "providers",
+    "info": {
+        "singularName": "provider",
+        "pluralName": "providers",
+        "displayName": "Provider"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "cnpj": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "jewels": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::jewel.jewel",
+            "mappedBy": "provider"
+        }
+    }
+}

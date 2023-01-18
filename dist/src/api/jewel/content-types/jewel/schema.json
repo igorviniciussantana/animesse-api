@@ -61,6 +61,12 @@
         "recommended": {
             "type": "boolean",
             "default": false
+        },
+        "provider": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::provider.provider",
+            "inversedBy": "jewels"
         }
     }
 }
