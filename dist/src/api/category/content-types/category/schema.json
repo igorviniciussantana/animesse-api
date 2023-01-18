@@ -18,6 +18,12 @@
         "slug": {
             "type": "uid",
             "targetField": "name"
+        },
+        "jewels": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::jewel.jewel",
+            "mappedBy": "category"
         }
     }
 }
