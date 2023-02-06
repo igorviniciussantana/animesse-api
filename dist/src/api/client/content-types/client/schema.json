@@ -22,6 +22,12 @@
         },
         "address": {
             "type": "string"
+        },
+        "vendas": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::venda.venda",
+            "mappedBy": "client"
         }
     }
 }

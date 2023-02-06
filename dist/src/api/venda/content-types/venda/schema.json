@@ -1,0 +1,32 @@
+{
+    "kind": "collectionType",
+    "collectionName": "vendas",
+    "info": {
+        "singularName": "venda",
+        "pluralName": "vendas",
+        "displayName": "Venda",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "jewels": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::jewel.jewel",
+            "inversedBy": "vendas"
+        },
+        "client": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::client.client",
+            "inversedBy": "vendas"
+        },
+        "price": {
+            "type": "decimal",
+            "default": 0
+        }
+    }
+}

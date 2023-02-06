@@ -67,6 +67,12 @@
             "relation": "manyToOne",
             "target": "api::provider.provider",
             "inversedBy": "jewels"
+        },
+        "vendas": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::venda.venda",
+            "mappedBy": "jewels"
         }
     }
 }
